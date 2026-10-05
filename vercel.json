@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    { "source": "/category/:slug", "destination": "/products.html" },
+    { "source": "/product/:slug", "destination": "/products.html" },
+    { "source": "/shop", "destination": "/products.html" },
+    { "source": "/search", "destination": "/products.html" },
+    { "source": "/wishlist", "destination": "/products.html" },
+    { "source": "/collections", "destination": "/collections.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/faqs", "destination": "/faq.html" },
+    { "source": "/shipping-delivery", "destination": "/shipping-delivery.html" },
+    { "source": "/returns-exchanges", "destination": "/returns-exchanges.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/terms-and-conditions", "destination": "/terms-and-conditions.html" },
+    { "source": "/cart", "destination": "/cart.html" },
+    { "source": "/checkout", "destination": "/checkout.html" },
+    { "source": "/order-confirmation", "destination": "/order-confirmation.html" }
+  ]
+}

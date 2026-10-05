@@ -1,0 +1,17 @@
+/shop /products.html 200
+/search /products.html 200
+/wishlist /products.html 200
+/category/* /products.html 200
+/product/* /products.html 200
+/collections /collections.html 200
+/about /about.html 200
+/contact /contact.html 200
+/faq /faq.html 200
+/faqs /faq.html 200
+/shipping-delivery /shipping-delivery.html 200
+/returns-exchanges /returns-exchanges.html 200
+/privacy-policy /privacy-policy.html 200
+/terms-and-conditions /terms-and-conditions.html 200
+/cart /cart.html 200
+/checkout /checkout.html 200
+/order-confirmation /order-confirmation.html 200
