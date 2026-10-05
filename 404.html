@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<title>ELAN Jewellery</title>
+</head>
+<body>
+	<script>
+		const url = new URL(window.location.href);
+		const segments = url.pathname.split("/").filter(Boolean);
+		const repositoryRoot = segments.length ? `/${segments[0]}/` : "/";
+		const route = `/${segments.slice(1).join("/")}`.replace(/\/+$/, "") || "/";
+		const knownRoutes = new Set([
+			"/shop", "/search", "/wishlist", "/collections", "/about", "/contact",
+			"/faq", "/faqs", "/cart", "/checkout", "/order-confirmation",
+			"/shipping-delivery", "/returns-exchanges", "/privacy-policy",
+			"/terms-and-conditions"
+		]);
+		if (knownRoutes.has(route) || route.startsWith("/category/") || route.startsWith("/product/")) {
+			url.pathname = `${repositoryRoot}products.html`;
+			url.searchParams.set("route", route);
+		} else {
+			url.pathname = `${repositoryRoot}index.html`;
+			url.search = "";
+		}
+		window.location.replace(url);
+	</script>
+</body>
+</html>
